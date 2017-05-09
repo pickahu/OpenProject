@@ -23,6 +23,11 @@
         </activity>
         <activity android:name=".UniversalImageLoader.LocalImageLoadActivity">
         </activity>
+        <activity android:name=".Gradle.GlideLocalActivity">
+        </activity>
+        <activity android:name=".Gradle.GlideNetActivity">
+        </activity>
+
     </application>
 
 </manifest>
