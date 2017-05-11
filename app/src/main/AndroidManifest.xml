@@ -25,6 +25,7 @@
         <activity android:name=".Glide.GlideNetActivity"></activity>
 
         <activity android:name=".imagesSelect.ImageMainActivity"></activity>
+        <activity android:name=".Database.DbUtils.DbUtilsActivity"></activity>
     </application>
 
 </manifest>

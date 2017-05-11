@@ -1,9 +1,16 @@
 package pickahu.openproject;
 
 import android.app.Application;
+import android.util.Log;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+
+import org.xutils.DbManager;
+import org.xutils.db.table.TableEntity;
+import org.xutils.x;
+
+import java.io.File;
 
 import cn.finalteam.galleryfinal.CoreConfig;
 import cn.finalteam.galleryfinal.FunctionConfig;
@@ -52,6 +59,11 @@ public class MyApplication extends Application {
                 .setPauseOnScrollListener(pauseOnScrollListener)
                 .build();
         GalleryFinal.init(coreConfig);
+
+        //XUtils初始化
+        x.Ext.init(this);
+
+
 
     }
 }
