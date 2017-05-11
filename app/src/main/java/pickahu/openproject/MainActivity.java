@@ -5,10 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import pickahu.openproject.Gradle.GlideLocalActivity;
-import pickahu.openproject.Gradle.GlideNetActivity;
+import pickahu.openproject.Glide.GlideLocalActivity;
+import pickahu.openproject.Glide.GlideNetActivity;
 import pickahu.openproject.UniversalImageLoader.LocalImageLoadActivity;
 import pickahu.openproject.UniversalImageLoader.NetImageLoadActivity;
+import pickahu.openproject.imagesSelect.ImageMainActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_local_image).setOnClickListener(this);
         findViewById(R.id.btn_glide_local_image).setOnClickListener(this);
         findViewById(R.id.btn_glide_net_image).setOnClickListener(this);
+        findViewById(R.id.btn_images_select).setOnClickListener(this);
     }
 
     private void initData(){
@@ -50,6 +52,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_glide_net_image:
                 startActivity(new Intent(MainActivity.this, GlideNetActivity.class));
+                break;
+            case R.id.btn_images_select:
+                startActivity(new Intent(MainActivity.this, ImageMainActivity.class));
         }
     }
 }

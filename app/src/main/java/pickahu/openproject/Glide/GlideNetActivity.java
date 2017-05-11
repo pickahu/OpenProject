@@ -1,4 +1,4 @@
-package pickahu.openproject.Gradle;
+package pickahu.openproject.Glide;
 
 import android.app.Activity;
 import android.os.Bundle;

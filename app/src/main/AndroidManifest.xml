@@ -19,15 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UniversalImageLoader.NetImageLoadActivity">
-        </activity>
-        <activity android:name=".UniversalImageLoader.LocalImageLoadActivity">
-        </activity>
-        <activity android:name=".Gradle.GlideLocalActivity">
-        </activity>
-        <activity android:name=".Gradle.GlideNetActivity">
-        </activity>
+        <activity android:name=".UniversalImageLoader.NetImageLoadActivity"></activity>
+        <activity android:name=".UniversalImageLoader.LocalImageLoadActivity"></activity>
+        <activity android:name=".Glide.GlideLocalActivity"></activity>
+        <activity android:name=".Glide.GlideNetActivity"></activity>
 
+        <activity android:name=".imagesSelect.ImageMainActivity"></activity>
     </application>
 
 </manifest>

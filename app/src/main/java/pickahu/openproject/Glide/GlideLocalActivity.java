@@ -1,4 +1,4 @@
-package pickahu.openproject.Gradle;
+package pickahu.openproject.Glide;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.widget.GridView;
 import java.util.List;
 
 import pickahu.openproject.R;
-import pickahu.openproject.Gradle.adapter.ImagesAdapter;
+import pickahu.openproject.Glide.adapter.ImagesAdapter;
 import pickahu.openproject.UniversalImageLoader.bean.Photo;
 import pickahu.openproject.UniversalImageLoader.utils.DataUtils;
 
