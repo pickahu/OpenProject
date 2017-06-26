@@ -26,6 +26,10 @@
 
         <activity android:name=".imagesSelect.ImageMainActivity"></activity>
         <activity android:name=".Database.DbUtils.DbUtilsActivity"></activity>
+
+        <activity android:name=".Recyclerview.RecyclerviewListActivity"></activity>
+        <activity android:name=".Recyclerview.RecyclerviewGridActivity"></activity>
+        <activity android:name=".Recyclerview.RecyclerviewPubuActivity"></activity>
     </application>
 
 </manifest>
