@@ -13,8 +13,9 @@ import pickahu.openproject.Recyclerview.RecyclerviewPubuActivity;
 import pickahu.openproject.UniversalImageLoader.LocalImageLoadActivity;
 import pickahu.openproject.UniversalImageLoader.NetImageLoadActivity;
 import pickahu.openproject.imagesSelect.ImageMainActivity;
+import pickahu.openproject.retrofit2.Retrofit2Activity;
 
-public class MainActivity extends BaseActivity implements View.OnClickListener{
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 
     @Override
@@ -27,7 +28,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
 
     }
 
-    private void initView(){
+    private void initView() {
 
         findViewById(R.id.btn_net_image).setOnClickListener(this);
         findViewById(R.id.btn_local_image).setOnClickListener(this);
@@ -38,16 +39,16 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         findViewById(R.id.btn_recyclerview_list).setOnClickListener(this);
         findViewById(R.id.btn_recyclerview_grid).setOnClickListener(this);
         findViewById(R.id.btn_recyclerview_pubu).setOnClickListener(this);
+        findViewById(R.id.btn_retrofit).setOnClickListener(this);
     }
 
-    private void initData(){
+    private void initData() {
 
     }
 
     @Override
     public void onClick(View view) {
-        switch (view.getId())
-        {
+        switch (view.getId()) {
             case R.id.btn_net_image:
                 startActivity(new Intent(MainActivity.this, NetImageLoadActivity.class));
                 break;
@@ -79,6 +80,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
 
             case R.id.btn_recyclerview_pubu:
                 startActivity(new Intent(MainActivity.this, RecyclerviewPubuActivity.class));
+                break;
+
+            case R.id.btn_retrofit:
+                startActivity(new Intent(MainActivity.this, Retrofit2Activity.class));
                 break;
         }
     }

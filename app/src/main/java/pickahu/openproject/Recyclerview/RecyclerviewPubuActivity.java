@@ -105,18 +105,13 @@ public class RecyclerviewPubuActivity extends BaseActivity {
                         return false;
                     }
                 });
-
             }
-
-
         }
 
         private int produceRandom(int min,int max){
             Random random = new Random();
             return random.nextInt(max)%(max-min+1) + min;
         }
-
-
         @Override
         public int getItemCount() {
             return mData.size();

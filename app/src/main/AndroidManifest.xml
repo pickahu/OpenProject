@@ -30,6 +30,8 @@
         <activity android:name=".Recyclerview.RecyclerviewListActivity"></activity>
         <activity android:name=".Recyclerview.RecyclerviewGridActivity"></activity>
         <activity android:name=".Recyclerview.RecyclerviewPubuActivity"></activity>
+
+        <activity android:name=".retrofit2.Retrofit2Activity"></activity>
     </application>
 
 </manifest>
