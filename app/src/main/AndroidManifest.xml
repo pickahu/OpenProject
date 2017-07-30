@@ -32,6 +32,12 @@
         <activity android:name=".Recyclerview.RecyclerviewPubuActivity"></activity>
 
         <activity android:name=".retrofit2.Retrofit2Activity"></activity>
+        <activity
+            android:name=".ActivityShow.ShowStyleActivity"
+            android:theme="@style/AppTheme2"></activity>
+        <activity
+            android:name=".ActivityShow.SecondActivity"
+            android:theme="@style/AppTheme2"></activity>
     </application>
 
 </manifest>

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import pickahu.openproject.ActivityShow.ShowStyleActivity;
 import pickahu.openproject.Database.DbUtils.DbUtilsActivity;
 import pickahu.openproject.Glide.GlideLocalActivity;
 import pickahu.openproject.Glide.GlideNetActivity;
@@ -40,6 +41,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         findViewById(R.id.btn_recyclerview_grid).setOnClickListener(this);
         findViewById(R.id.btn_recyclerview_pubu).setOnClickListener(this);
         findViewById(R.id.btn_retrofit).setOnClickListener(this);
+        findViewById(R.id.btn_activity_show).setOnClickListener(this);
     }
 
     private void initData() {
@@ -85,6 +87,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.btn_retrofit:
                 startActivity(new Intent(MainActivity.this, Retrofit2Activity.class));
                 break;
+
+            case R.id.btn_activity_show:
+                startActivity(new Intent(MainActivity.this, ShowStyleActivity.class));
+                break;
+
+
         }
     }
 }

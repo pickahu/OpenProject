@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_makeCustomAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="makeCustomAnimation" />
+
+    <Button
+        android:id="@+id/btn_makeScaleUpAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="makeScaleUpAnimation" />
+
+    <Button
+        android:id="@+id/btn_makeSceneTransitionAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="makeSceneTransitionAnimation" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/image_icon"
+        android:transitionName="tran_image"
+        android:src="@drawable/image"
+        />
+</LinearLayout>
